@@ -1,0 +1,22 @@
+dateModified: 1739439188
+email:
+  fromEmail: sanne.strikkers@makesomenoise.nl
+  fromName: boilertemplate-nuxt-craftcms
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    17f7ea10-56cf-43e0-81f1-240a6ef0c952: boilertemplate-nuxt-craftcms # boilertemplate-nuxt-craftcms
+    dd8ba6c1-8c00-4a27-94f9-bfa0032c35c9: boilertemplate-nuxt-craftcms # boilertemplate-nuxt-craftcms
+system:
+  edition: solo
+  live: true
+  name: boilertemplate-nuxt-craftcms
+  schemaVersion: 5.6.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
