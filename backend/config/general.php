@@ -1,4 +1,5 @@
 <?php
+
 /**
  * General Configuration
  *
@@ -23,5 +24,10 @@ return GeneralConfig::create()
     // Set the @webroot alias so the clear-caches command knows where to find CP resources
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
+        '@uploads' => App::env('PRIMARY_SITE_URL') . '/uploads',
     ])
+    // Whether the system should run in Headless Mode, which optimizes the system and control panel for headless CMS implementations
+    ->headlessMode(true)
+    // Required for API requests to be able to authenticate with a token
+    ->allowedGraphqlOrigins([getenv('CRAFT_SITE_URL'), getenv('PRIMARY_SITE_URL')]);
 ;

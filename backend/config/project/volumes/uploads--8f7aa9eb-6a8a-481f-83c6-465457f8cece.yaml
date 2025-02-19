@@ -1,0 +1,80 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  54d49d98-84c6-46f8-8842-ed71310aa4c9:
+    cardView:
+      - dateCreated
+      - filename
+      - location
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-17T15:43:48+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 2d44d66e-8f10-4d1c-807b-a42dbef84ad7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-02-17T15:45:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: e4b9b9aa-4f37-4f8e-b1c5-bcb55bfbe13b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c8e61137-ce65-46c3-883e-fa917d3d62f9
+        userCondition: null
+fs: local
+handle: uploads
+name: Uploads
+sortOrder: 1
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

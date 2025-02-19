@@ -1,0 +1,108 @@
+color: orange
+fieldLayouts:
+  c00b852f-da08-4e1e-b2ca-366d4579f37f:
+    cardView:
+      - dateUpdated
+      - uid
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-17T14:59:50+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c32787ef-60bd-4d6f-b843-aca4dc140785
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T15:01:27+00:00'
+            elementCondition: null
+            fieldUid: b4dfadde-ae11-406f-b7fb-aa966a2c198a # Subtitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aee6452-54f8-43a9-af01-51eed9257598
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T15:01:27+00:00'
+            elementCondition: null
+            fieldUid: 5808a9f0-f383-4a23-8a1f-8fc9dbeb6338 # Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 827dc6e5-b921-4807-9dd5-e2c434893a2c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5e4375b9-a3a4-4c1d-bd47-923164618ef0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-17T15:01:27+00:00'
+            elementCondition: null
+            fieldUid: 0e946fe4-fea0-467e-a36c-a71a36941462 # Seo Settings
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e06703fd-c7c0-4693-90bd-86636c553c9b
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 61fb76b1-68af-41e0-bba1-edc3c26a962f
+        userCondition: null
+handle: mediaBlock
+hasTitleField: true
+icon: photo-film
+name: 'Media Block'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

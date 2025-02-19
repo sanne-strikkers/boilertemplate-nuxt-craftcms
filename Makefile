@@ -55,7 +55,7 @@ nuke:
 		echo "Removing frontend node_modules" && \
 		rm -rf ./node_modules && \
 		echo "Removing backend vendor"  && \
-		cd $(BASE_DIR)/backend && \
+	cd $(BASE_DIR)/backend && \
 		rm -rf ./vendor
 
 rebuild:

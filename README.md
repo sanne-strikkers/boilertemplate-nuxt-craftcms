@@ -15,6 +15,9 @@ To get the project up and running, execute:
 make build
 ```
 
+### Craft CMS
+To open the cms of the project go to `https://backend.boilertemplate-nuxt-craftcms.test/admin/`.
+
 ## Project Structure
 
 We’ve split the project directory into two folders, `backend/` and `frontend/`, to better demonstrate the boundaries of Craft and Nuxt, respectively. Some configuration needs to be transcribed between the spaces to ensure each half understands where the other lives!
@@ -38,12 +41,15 @@ See `frontend/nuxt.config.js` to [customize Nuxt](https://nuxt.com/docs/getting-
 Routing is handled primarily via the [`pages/`](https://nuxt.com/docs/guide/directory-structure/pages) directory, and GraphQL queries are centralized in `queries/`.
 
 ## Run Project
+
+### Makefile
 Run project with the Makefile
 
 ```bash
 make run
 ```
 
+### Manually
 Run project manually
 
 ```bash
