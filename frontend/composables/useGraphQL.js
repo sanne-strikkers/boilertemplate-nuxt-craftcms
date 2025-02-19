@@ -1,4 +1,5 @@
 import { useRuntimeConfig } from '#app'
+import { usePreview } from '@/composables/usePreview'
 
 export function useGraphQL() {
   const config = useRuntimeConfig()
@@ -13,7 +14,7 @@ export function useGraphQL() {
 
       const headers = {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
       }
 
       // Add auth header if private flag is true
@@ -61,4 +62,34 @@ export function useGraphQL() {
   }
 
   return { query }
+}
+
+// Fetch data function
+export function useGraphQLQuery(key, query, variables = {}, watchDeps = []) {
+  const { previewToken, previewTimestamp } = usePreview()
+  const graphql = useGraphQL();
+
+  const { data, refresh, error, pending } = useAsyncData(
+    key,
+    async () => {
+      try {
+        const result = await graphql.query(query, variables, {
+          previewToken: previewToken.value
+        })
+
+        return result.entry
+      } catch (err) {
+        console.error(`Failed to fetch data for ${key}:`, err)
+        throw createError({
+          statusCode: 404,
+          message: `${key} not found`
+        })
+      }
+    },
+    {
+      watch: [previewToken, previewTimestamp, ...watchDeps] // Auto-refresh on preview changes
+    }
+  )
+
+  return { data, refresh, error, pending }
 }

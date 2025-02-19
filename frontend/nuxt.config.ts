@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -16,6 +19,17 @@ export default defineNuxtConfig({
       PRIMARY_SITE_NAME: process.env.PRIMARY_SITE_NAME,
     }
   },
+  devServer: {
+    host: process.env.PRIMARY_SITE_URL,
+    port: 3000,
+  },
+  components: {
+		global: true,
+		dirs: ["~/components"],
+	},
+  typescript: {
+		shim: false,
+	},
   nitro: {
     devServer: {
       watch: ['./server']
@@ -23,5 +37,11 @@ export default defineNuxtConfig({
   },
   experimental: {
     payloadExtraction: false
-  }
+  },
+  css: ['~/assets/css/main.css'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
 })
