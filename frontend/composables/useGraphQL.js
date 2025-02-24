@@ -17,7 +17,6 @@ export function useGraphQL() {
         'Accept': 'application/json',
       }
 
-      // Add auth header if private flag is true
       if (options.private) {
         headers['Authorization'] = `Bearer ${config.public.CRAFT_GRAPHQL_TOKEN}`
       }
@@ -69,27 +68,29 @@ export function useGraphQLQuery(key, query, variables = {}, watchDeps = []) {
   const { previewToken, previewTimestamp } = usePreview()
   const graphql = useGraphQL();
 
+  console.log('Fetching data for:', key, 'with variables:', variables);
+
   const { data, refresh, error, pending } = useAsyncData(
     key,
     async () => {
       try {
         const result = await graphql.query(query, variables, {
           previewToken: previewToken.value
-        })
+        });
 
-        return result.entry
+        console.log('GraphQL Response:', result);
+
+        return result || [];
       } catch (err) {
-        console.error(`Failed to fetch data for ${key}:`, err)
-        throw createError({
-          statusCode: 404,
-          message: `${key} not found`
-        })
+        console.error(`Failed to fetch data for ${key}:`, err);
+        return []; 
       }
     },
     {
-      watch: [previewToken, previewTimestamp, ...watchDeps] // Auto-refresh on preview changes
+      watch: [previewToken, previewTimestamp, ...watchDeps],
+      default: () => []
     }
-  )
+  );
 
-  return { data, refresh, error, pending }
+  return { data, refresh, error, pending };
 }

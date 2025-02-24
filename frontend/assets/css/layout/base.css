@@ -1,20 +1,21 @@
 @layer base {
     body {
         font-family: var(--font-display);
+        /* @apply leading-none; */
     }
     h1 {
-        @apply mb-4 text-4xl font-bold text-primary dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl;
+        @apply mb-4 text-4xl font-bold text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl xl:leading-14;
     }
 
     h2 {
-        @apply text-3xl font-bold text-primary dark:text-white sm:text-4xl md:text-[40px];
+        @apply text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] xl:leading-12;
     }
 
     h3 {
-        @apply text-2xl font-bold text-primary dark:text-white sm:text-3xl;
+        @apply text-2xl font-bold text-dark dark:text-white sm:text-3xl xl:leading-10;
     }
 
-    h4 {
-        @apply block text-lg font-medium text-secondary;
+    h4, .subtitle {
+        @apply block text-lg font-medium text-primary mb-0.5;
     }
 }

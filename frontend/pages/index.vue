@@ -1,6 +1,8 @@
 <template>
-    <div :key="previewTimestamp" v-if="pageContent">
-        <ComponentLoader :data="pageContent.contentBlock" />
+    <div class="home page">
+        <div :key="previewTimestamp" v-if="pageContent">
+            <ComponentLoader :data="pageContent.contentBlock" />
+        </div>
     </div>
 </template>
 
@@ -11,12 +13,12 @@ import { HOME_QUERY } from '@/queries/sections/home.mjs'
 
 const { isPreview, previewToken, previewTimestamp } = usePreview()
 
-// Disable SSR for preview mode
 if (isPreview.value) {
     definePageMeta({ ssr: false })
 }
 
-const { data: pageContent, refresh, error, pending } = useGraphQLQuery('homepage', HOME_QUERY)
+const { data, refresh, error, pending } = useGraphQLQuery('homepage', HOME_QUERY)
+const pageContent = computed(() => data.value?.entry || {})
 
 watch([isPreview, previewToken], () => {
     if (isPreview.value && previewToken.value) {
