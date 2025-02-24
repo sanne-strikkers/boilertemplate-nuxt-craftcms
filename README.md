@@ -40,6 +40,8 @@ See `frontend/nuxt.config.js` to [customize Nuxt](https://nuxt.com/docs/getting-
 
 Routing is handled primarily via the [`pages/`](https://nuxt.com/docs/guide/directory-structure/pages) directory, and GraphQL queries are centralized in `queries/`.
 
+Open the local front-end website with the following link: `https://backend.boilertemplate-nuxt-craftcms.test:3000`
+
 ## Run Project
 
 ### Makefile
