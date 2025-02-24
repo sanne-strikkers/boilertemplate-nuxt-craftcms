@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: backgroundColor
+instructions: null
+name: 'Background Color'
+searchable: false
+settings:
+  allowCustomColors: false
+  palette:
+    -
+      __assoc__:
+        -
+          - color
+          - '#f8f8f8'
+        -
+          - label
+          - Gray
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - color
+          - '#c4c4c4'
+        -
+          - label
+          - 'Dark Gray'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - color
+          - '#f8f9ff'
+        -
+          - label
+          - 'Light Violet'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

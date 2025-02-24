@@ -1,7 +1,12 @@
 @theme {
-    --color-primary: #111928; 
-    --color-secondary: #3757f9; 
+    --color-primary: #3757f9; 
+    --color-secondary: #13c296;
     --color-tertiary: #637381;
+    
+    --color-dark: #111928;
+    --color-gray: #f8f8f8;
+    --color-gray--dark: #c4c4c4;
+    --color-violet--light: #f8f9ff;
     
     --font-display: "Inter", "sans-serif"; 
 }
