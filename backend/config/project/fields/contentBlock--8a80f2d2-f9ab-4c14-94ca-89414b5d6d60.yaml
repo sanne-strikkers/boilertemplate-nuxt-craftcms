@@ -12,6 +12,16 @@ settings:
         -
           - uid
           - 53471367-9b15-424e-b158-66e7bc249262 # Text Block
+    -
+      __assoc__:
+        -
+          - uid
+          - 82d5b0c6-c9ed-4777-adc7-365a282dadb2
+    -
+      __assoc__:
+        -
+          - uid
+          - 4060e53b-d2b8-4cd3-87b8-badc32ff95c6 # Hero Block
   includeTableView: false
   maxEntries: null
   minEntries: null

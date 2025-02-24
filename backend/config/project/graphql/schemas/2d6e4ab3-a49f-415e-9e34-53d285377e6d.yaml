@@ -6,6 +6,7 @@ scope:
   - 'elements.revisions:read'
   - 'elements.inactive:read'
   - 'sections.ae54103f-a518-40e2-8158-2aac2c5a70aa:read' # Homepage
+  - 'sections.9107fffd-6d36-434a-acf0-223857f98acd:read' # Generic
   - 'nestedentryfields.8a80f2d2-f9ab-4c14-94ca-89414b5d6d60:read' # Content Block
   - 'volumes.8f7aa9eb-6a8a-481f-83c6-465457f8cece:read' # Uploads
   - 'globalsets.61986009-833f-4b45-985e-e9379b03681e:read' # Company Info

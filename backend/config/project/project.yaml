@@ -1,33 +1,40 @@
-dateModified: 1739807779
+dateModified: 1740404240
 email:
   fromEmail: sanne.strikkers@makesomenoise.nl
   fromName: boilertemplate-nuxt-craftcms
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   local:
-    hasUrls: false
+    hasUrls: true
     name: Local
     settings:
       path: $DOCUMENT_ROOT/uploads
     type: craft\fs\Local
-    url: null
+    url: $CRAFT_BASE_CP_URL/uploads
 meta:
   __names__:
     0e946fe4-fea0-467e-a36c-a71a36941462: 'Seo Settings' # Seo Settings
     2d6e4ab3-a49f-415e-9e34-53d285377e6d: 'Public Schema' # Public Schema
+    3dbf2758-17bd-4c59-a3e0-441cf45daeca: 'Background Color' # Background Color
+    5b38c8b3-fa19-413a-9195-de394b4cbf33: Generic # Generic
     6b082bd3-deb7-4f0c-8d54-e68f443ad399: 'Page Layout' # Page Layout
     7f11c1d6-0f4d-45ff-8037-ad1c8865be7a: Logo # Logo
     8a80f2d2-f9ab-4c14-94ca-89414b5d6d60: 'Content Block' # Content Block
     8f7aa9eb-6a8a-481f-83c6-465457f8cece: Uploads # Uploads
     17f7ea10-56cf-43e0-81f1-240a6ef0c952: boilertemplate-nuxt-craftcms # boilertemplate-nuxt-craftcms
-    82d5b0c6-c9ed-4777-adc7-365a282dadb2: 'Media Block' # Media Block
+    4060e53b-d2b8-4cd3-87b8-badc32ff95c6: 'Hero Block' # Hero Block
     5808a9f0-f383-4a23-8a1f-8fc9dbeb6338: Paragraph # Paragraph
+    9107fffd-6d36-434a-acf0-223857f98acd: Generic # Generic
     53471367-9b15-424e-b158-66e7bc249262: 'Text Block' # Text Block
     61986009-833f-4b45-985e-e9379b03681e: 'Company Info' # Company Info
     ae54103f-a518-40e2-8158-2aac2c5a70aa: Homepage # Homepage
     b4dfadde-ae11-406f-b7fb-aa966a2c198a: Subtitle # Subtitle
     b68fa39b-3a0c-4dab-a40b-2b1d938920cb: 'API Schema' # API Schema
+    b8528d9a-6f25-4650-9e73-c032642be2f7: Link # Link
+    bb65c87e-995e-4618-b84b-5736d7b12c28: Hero # Hero
     be26800a-5c80-4f88-9890-7f3557c2ee97: Address # Address
+    cffac7b6-3ca9-4084-8b12-ca0907859b90: Media # Media
+    d456cb8e-d74c-4804-90d2-fa5e80f1cf47: ArticleLayout # ArticleLayout
     dd8ba6c1-8c00-4a27-94f9-bfa0032c35c9: boilertemplate-nuxt-craftcms # boilertemplate-nuxt-craftcms
 plugins:
   seomatic:

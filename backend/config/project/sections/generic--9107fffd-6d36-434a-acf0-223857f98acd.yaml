@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: d456cb8e-d74c-4804-90d2-fa5e80f1cf47 # ArticleLayout
+handle: generic
+maxAuthors: 1
+name: Generic
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  17f7ea10-56cf-43e0-81f1-240a6ef0c952: # boilertemplate-nuxt-craftcms
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+type: channel
