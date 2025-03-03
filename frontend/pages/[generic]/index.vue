@@ -1,6 +1,7 @@
 <template>
     <div class="generic page" v-if="pageContent" :key="previewTimestamp">
-        <GlobalSeo :data="pageContent.seomatic" v-if="pageContent.seomatic" :key="previewTimestamp"/>
+        <GlobalSeo :data="pageContent.seomatic" v-if="pageContent.seomatic" />
+
         <div class="container">
             <LayoutCta :data="{label: '<- Return to previous page'}" type="link" @click="$router.go(-1)"/>
             <div class="text-center">
@@ -10,6 +11,7 @@
                 <p v-if="pageContent.paragraph" v-html="pageContent.paragraph"></p>
             </div>
         </div>
+        
         <div class="generic__contentBlocks" v-if="pageContent.contentBlock">
             <ComponentLoader :data="pageContent.contentBlock" />
         </div>

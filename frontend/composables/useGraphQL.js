@@ -1,6 +1,15 @@
 import { useRuntimeConfig } from '#app'
 import { usePreview } from '@/composables/usePreview'
 
+/**
+ * useGraphQL - Provides a function to execute GraphQL queries.
+ * 
+ * This function retrieves the runtime configuration and sends 
+ * GraphQL queries to the Craft CMS API. It handles authentication, 
+ * error handling, and response validation.
+ * 
+ * @returns {Object} An object containing the `query` function.
+ */
 export function useGraphQL() {
   const config = useRuntimeConfig()
 
@@ -63,7 +72,18 @@ export function useGraphQL() {
   return { query }
 }
 
-// Fetch data function
+/**
+ * useGraphQLQuery - Fetches data from the GraphQL API with reactivity support.
+ * 
+ * This function wraps `useAsyncData` to automatically update data when dependencies change.
+ * It also handles preview tokens for Craft CMS.
+ * 
+ * @param key - A unique key for caching the query result.
+ * @param query - The GraphQL query string.
+ * @param variables - Query variables.
+ * @param watchDeps - Dependencies that trigger a refresh.
+ * @returns GraphQL response data with reactive state management.
+ */
 export function useGraphQLQuery(key, query, variables = {}, watchDeps = []) {
   const { previewToken, previewTimestamp } = usePreview()
   const graphql = useGraphQL();
