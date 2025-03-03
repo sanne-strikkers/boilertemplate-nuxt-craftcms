@@ -2,7 +2,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "5.6.9.1",
+    "craftcms/cms": "5.6.10.2",
     "nystudio107/craft-seomatic": "^5.1.11",
     "vlucas/phpdotenv": "^5.4.0"
   },

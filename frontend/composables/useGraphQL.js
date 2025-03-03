@@ -68,8 +68,6 @@ export function useGraphQLQuery(key, query, variables = {}, watchDeps = []) {
   const { previewToken, previewTimestamp } = usePreview()
   const graphql = useGraphQL();
 
-  console.log('Fetching data for:', key, 'with variables:', variables);
-
   const { data, refresh, error, pending } = useAsyncData(
     key,
     async () => {
@@ -77,8 +75,6 @@ export function useGraphQLQuery(key, query, variables = {}, watchDeps = []) {
         const result = await graphql.query(query, variables, {
           previewToken: previewToken.value
         });
-
-        console.log('GraphQL Response:', result);
 
         return result || [];
       } catch (err) {

@@ -1,0 +1,98 @@
+fieldLayouts:
+  f9f20bbb-431c-4a31-ad58-495b615e5e86:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-24T14:22:16+00:00'
+            elementCondition: null
+            fieldUid: 49ac4f0d-f7f4-4083-98bf-172126ebfbab # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'General Website Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6be7a13-8022-4302-aa9a-f83f285466dd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T14:22:16+00:00'
+            elementCondition: null
+            fieldUid: 5808a9f0-f383-4a23-8a1f-8fc9dbeb6338 # Paragraph
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'General Website Summary'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1814682-63e8-4e43-ab54-962029816597
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T14:26:15+00:00'
+            elementCondition: null
+            fieldUid: 5808a9f0-f383-4a23-8a1f-8fc9dbeb6338 # Paragraph
+            handle: paragraph3
+            includeInCards: false
+            instructions: null
+            label: 'General Website Keywords'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd33eaae-91f3-42f8-a98f-2f42af915c02
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T14:24:26+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: aa4d0c65-2d8b-4c2a-9ec5-bf7d983d2c69
+            userCondition: null
+          -
+            dateAdded: '2025-02-24T14:22:16+00:00'
+            elementCondition: null
+            fieldUid: 7f11c1d6-0f4d-45ff-8037-ad1c8865be7a # Logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'General Website Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dc50910e-38e4-4539-9bc6-baf8529ab573
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-24T14:24:26+00:00'
+            elementCondition: null
+            fieldUid: 5808a9f0-f383-4a23-8a1f-8fc9dbeb6338 # Paragraph
+            handle: paragraph2
+            includeInCards: false
+            instructions: null
+            label: 'General Website Image Summary'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bb92744-425b-4704-9d21-01c960cb8eea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2bbb9168-9552-4505-bc73-e7a544c630ff
+        userCondition: null
+handle: websiteInfo
+name: 'Website Info'
+sortOrder: 2

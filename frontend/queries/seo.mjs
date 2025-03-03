@@ -1,6 +1,5 @@
-export const SEO_QUERY = (uri = "/") => `
-  query Seo {
-    seomatic(uri: "${uri}") {
+export const SEO_QUERY = `
+      seomatic {
         metaTitleContainer
         metaTagContainer
         metaLinkContainer
@@ -9,5 +8,4 @@ export const SEO_QUERY = (uri = "/") => `
         metaSiteVarsContainer
         frontendTemplateContainer
     }
-  }
 `

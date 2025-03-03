@@ -7,7 +7,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      titleTemplate: '%s | ' + process.env.PRIMARY_SITE_NAME,
       title: process.env.PRIMARY_SITE_NAME
     }
   },

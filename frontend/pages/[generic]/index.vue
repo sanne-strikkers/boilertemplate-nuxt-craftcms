@@ -1,5 +1,6 @@
 <template>
-    <div class="generic page">
+    <div class="generic page" v-if="pageContent" :key="previewTimestamp">
+        <GlobalSeo :data="pageContent.seomatic" v-if="pageContent.seomatic" :key="previewTimestamp"/>
         <div class="container">
             <LayoutCta :data="{label: '<- Return to previous page'}" type="link" @click="$router.go(-1)"/>
             <div class="text-center">
@@ -9,7 +10,7 @@
                 <p v-if="pageContent.paragraph" v-html="pageContent.paragraph"></p>
             </div>
         </div>
-        <div class="generic__contentBlocks" :key="previewTimestamp" v-if="pageContent.contentBlock">
+        <div class="generic__contentBlocks" v-if="pageContent.contentBlock">
             <ComponentLoader :data="pageContent.contentBlock" />
         </div>
     </div>
@@ -34,8 +35,8 @@ const slug = computed(() => {
   return Array.isArray(slugParam) ? slugParam.join('/') : slugParam
 })
 
-const { data, refresh, error, pending } = useGraphQLQuery(`${slug.value}`, GENERIC_QUERY, { uri: slug.value })
-const pageContent = computed(() => data.value?.genericEntries[0] || {})
+const { data, refresh, error, pending } = useGraphQLQuery(`page-${slug.value}`, GENERIC_QUERY, { uri: slug.value }, [slug])
+const pageContent = computed(() => data.value?.genericEntries ? data.value?.genericEntries[0] : {})
 
 watch([isPreview, previewToken], () => {
     if (isPreview.value && previewToken.value) {

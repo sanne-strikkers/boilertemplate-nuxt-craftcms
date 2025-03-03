@@ -1,6 +1,7 @@
 <template>
-    <div class="home page">
-        <div :key="previewTimestamp" v-if="pageContent">
+    <div class="home page" v-if="pageContent" :key="previewTimestamp">
+        <GlobalSeo :data="pageContent.seomatic" v-if="pageContent.seomatic"/>
+        <div>
             <ComponentLoader :data="pageContent.contentBlock" />
         </div>
     </div>

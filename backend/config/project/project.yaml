@@ -1,4 +1,4 @@
-dateModified: 1740404240
+dateModified: 1740407175
 email:
   fromEmail: sanne.strikkers@makesomenoise.nl
   fromName: boilertemplate-nuxt-craftcms
@@ -22,6 +22,7 @@ meta:
     8a80f2d2-f9ab-4c14-94ca-89414b5d6d60: 'Content Block' # Content Block
     8f7aa9eb-6a8a-481f-83c6-465457f8cece: Uploads # Uploads
     17f7ea10-56cf-43e0-81f1-240a6ef0c952: boilertemplate-nuxt-craftcms # boilertemplate-nuxt-craftcms
+    49ac4f0d-f7f4-4083-98bf-172126ebfbab: Title # Title
     4060e53b-d2b8-4cd3-87b8-badc32ff95c6: 'Hero Block' # Hero Block
     5808a9f0-f383-4a23-8a1f-8fc9dbeb6338: Paragraph # Paragraph
     9107fffd-6d36-434a-acf0-223857f98acd: Generic # Generic
@@ -36,6 +37,7 @@ meta:
     cffac7b6-3ca9-4084-8b12-ca0907859b90: Media # Media
     d456cb8e-d74c-4804-90d2-fa5e80f1cf47: ArticleLayout # ArticleLayout
     dd8ba6c1-8c00-4a27-94f9-bfa0032c35c9: boilertemplate-nuxt-craftcms # boilertemplate-nuxt-craftcms
+    e0877f8f-d154-4bfc-a8d5-0f495dbf6fe8: 'Website Info' # Website Info
 plugins:
   seomatic:
     edition: standard
