@@ -6,7 +6,11 @@ scope:
   - 'elements.revisions:read'
   - 'elements.inactive:read'
   - 'sections.ae54103f-a518-40e2-8158-2aac2c5a70aa:read' # Homepage
+  - 'sections.9107fffd-6d36-434a-acf0-223857f98acd:read' # Generic
   - 'nestedentryfields.8a80f2d2-f9ab-4c14-94ca-89414b5d6d60:read' # Content Block
+  - 'nestedentryfields.0c31af0f-3acb-4e9d-9485-6f5ca4e872e1:read' # Links
+  - 'nestedentryfields.6076d61c-0bd0-4be7-93be-3f01e3927d7d:read' # Navigation
   - 'volumes.8f7aa9eb-6a8a-481f-83c6-465457f8cece:read' # Uploads
+  - 'globalsets.e0877f8f-d154-4bfc-a8d5-0f495dbf6fe8:read' # Website Info
   - 'globalsets.61986009-833f-4b45-985e-e9379b03681e:read' # Company Info
   - 'seomatic.all:read'

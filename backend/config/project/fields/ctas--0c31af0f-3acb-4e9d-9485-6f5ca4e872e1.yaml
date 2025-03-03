@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: ctas
+instructions: null
+name: Links
+searchable: false
+settings:
+  createButtonLabel: 'Add link'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 21ec7521-2961-44da-a6ee-9a1fc577c7d6 # Link List
+  includeTableView: false
+  maxEntries: null
+  minEntries: 1
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

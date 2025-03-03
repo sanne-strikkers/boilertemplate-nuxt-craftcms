@@ -29,6 +29,7 @@ const props = withDefaults(defineProps<{
     type?: "button" | "link";
     bgColor?: "primary" | "secondary" | "tertiary";
     size?: "small" | "medium" | "large";
+    class?: string;
 }>(), {
     type: "button",
     bgColor: "primary",
@@ -58,11 +59,12 @@ const sizeClasses = {
 
 const computedClass = computed(() =>
     [
+        props.class,
         props.data?.class,
         props.type === "button" &&
         `${bgColorClasses[props.bgColor]} block w-fit rounded-md ${sizeClasses[props.size]} text-center font-medium text-white transition hover:opacity-90 cursor-pointer`,
         props.type === "link" &&
-        "cursor-pointer block text-base font-medium text-dark font-bold transition hover:underline hover:underline-offset-8"
+        "cursor-pointer block text-base font-medium text-dark font-bold transition"
     ]
 );
 

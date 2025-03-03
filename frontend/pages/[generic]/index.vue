@@ -3,7 +3,6 @@
         <GlobalSeo :data="pageContent.seomatic" v-if="pageContent.seomatic" />
 
         <div class="container">
-            <LayoutCta :data="{label: '<- Return to previous page'}" type="link" @click="$router.go(-1)"/>
             <div class="text-center">
                 <LayoutImage v-if="pageContent.media && pageContent.media.length > 0" :data="pageContent.media[0]" :cssClass="'mx-auto max-w-full mb-12'"/>
                 <span class="subtitle" v-if="pageContent.subtitle">{{ pageContent.subtitle }}</span>

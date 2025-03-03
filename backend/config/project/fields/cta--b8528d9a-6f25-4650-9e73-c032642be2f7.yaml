@@ -8,6 +8,7 @@ settings:
     - target
     - title
     - class
+    - ariaLabel
   fullGraphqlData: true
   maxLength: 255
   showLabelField: true
