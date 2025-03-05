@@ -1,6 +1,6 @@
 <template>
-    <section class="hero-block relative z-10 overflow-hidden bg-white pb-[110px] pt-[120px] dark:bg-dark md:pt-[150px] lg:pt-[180px]" v-if="data">
-      <div class="absolute left-0 top-0 z-[-1] max-h-3/4  h-full w-full rounded-br-[200px] dark:bg-dark-2 lg:w-1/2 lg:max-h-full" :style="{ backgroundColor: data.backgroundColor }"></div>
+    <section class="hero-block relative z-10 overflow-hidden bg-white pb-[110px] pt-[120px]" v-if="data">
+      <div class="absolute left-0 top-0 z-[-1] max-h-3/4  h-full w-full rounded-br-[200px] lg:w-1/2 lg:max-h-full" :style="{ backgroundColor: data.backgroundColor }"></div>
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-0">
           <div class="lg:pe-24">
