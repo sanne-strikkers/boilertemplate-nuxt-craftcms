@@ -5,6 +5,33 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-03-03T10:57:37+00:00'
+            elementCondition: null
+            fieldUid: 6076d61c-0bd0-4be7-93be-3f01e3927d7d # Navigation
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2935efc-bab7-4257-a48c-91d292aab983
+            userCondition: null
+            warning: null
+            width: 100
+        name: Navigation
+        uid: 0208e630-9981-401d-995b-90b3367a62bf
+        userCondition: null
+      -
+        elementCondition: null
+        name: Footer
+        uid: 744032d4-486d-4ed6-9db0-4198c8f9a8a9
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
             dateAdded: '2025-02-24T14:22:16+00:00'
             elementCondition: null
             fieldUid: 49ac4f0d-f7f4-4083-98bf-172126ebfbab # Title
@@ -62,7 +89,7 @@ fieldLayouts:
             dateAdded: '2025-02-24T14:22:16+00:00'
             elementCondition: null
             fieldUid: 7f11c1d6-0f4d-45ff-8037-ad1c8865be7a # Logo
-            handle: null
+            handle: media
             includeInCards: false
             instructions: null
             label: 'General Website Image'
@@ -95,4 +122,4 @@ fieldLayouts:
         userCondition: null
 handle: websiteInfo
 name: 'Website Info'
-sortOrder: 2
+sortOrder: 1

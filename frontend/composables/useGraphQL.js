@@ -96,6 +96,8 @@ export function useGraphQLQuery(key, query, variables = {}, watchDeps = []) {
           previewToken: previewToken.value
         });
 
+        // console.log(result);
+
         return result || [];
       } catch (err) {
         console.error(`Failed to fetch data for ${key}:`, err);
