@@ -2,7 +2,7 @@
     <header
         class="header fixed left-0 top-0 flex w-full items-center transition-all duration-300 ease-in-out z-50 lg:py-0"
         :class="scrolledFromTop && !menuOpen
-            ? 'bg-white/75 drop-shadow-2xl backdrop-blur-sm opacity-100'
+            ? 'bg-white/75 backdrop-blur-sm opacity-100 shadow-md'
             : 'opacity-100'">
 
         <div class="container">
@@ -21,9 +21,20 @@
 
                     <ul class="px-6 mt-6 lg:mt-0 lg:px-0 lg:flex lg:items-center">
                         <template v-for="item in data" :key="item?.id" v-if="data">
-                            <li v-for="link in item.ctas" :key="link.id" v-if="item && item.ctas">
+                            <li class="lg:ml-10" v-for="link in item.ctas" :key="link.id" v-if="item && item.ctas && item.ctas.length === 1">
                                 <LayoutCta :data="link.cta" type="link" v-if="link.cta"
-                                    class="block py-3 text-lg font-medium text-dark hover:text-primary lg:py-2 lg:ml-10 lg:inline-flex" />
+                                    class="block py-3 text-lg font-medium text-dark hover:text-primary lg:py-2 lg:inline-flex"/>
+                            </li>
+                            <li class="lg:ml-10" v-else>
+                                <LayoutDropdown :options="item.ctas || []" :isNavbar="true" :classes="scrolledFromTop ? 'lg:mt-10' : 'lg:mt-3'">
+                                    <template #button>
+                                        <span 
+                                            class="block py-3 text-lg font-medium text-dark hover:text-primary lg:py-2 lg:inline-flex"
+                                            :class="{ 'router-link-active' : item.ctas?.some((option) => '/' + option.cta?.url?.split('/').slice(1)[2] == route.path)}">
+                                            {{ item.title }}
+                                        </span>
+                                    </template>
+                                </LayoutDropdown>
                             </li>
                         </template>
                     </ul>
@@ -56,10 +67,15 @@ const scrolledFromTop = ref(false)
 const menuOpen = ref(false)
 const { resizing } = useViewport({ mobile: 768, tablet: 1024, laptop: 1280, desktop: 1440 });
 const bodyClass = computed(() => menuOpen.value ? 'overflow-hidden' : '')
+const route = useRoute();
 
 const handleScroll = () => {
     scrolledFromTop.value = window.scrollY >= 50
 }
+
+watch(() => route.fullPath, () => {
+    menuOpen.value = false;
+});
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
